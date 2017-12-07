@@ -11,3 +11,6 @@ documentation = "https://github.com/im-0/lossy-channel"
 
 [dependencies]
 futures = { version = "*", default_features = false }
+
+[dev-dependencies]
+futures = { version = "*", default_features = false, features=["use_std"] }
