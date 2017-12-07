@@ -1,0 +1,13 @@
+[package]
+name = "lossy-channel"
+description = "Bounded MPSC channel based on futures, provides always successfull sending by dropping outdated items from queue"
+version = "0.0.1"
+authors = ["Ivan Mironov <mironov.ivan@gmail.com>"]
+license = "MIT/Apache-2.0"
+keywords = ["channel", "future", "futures", "async"]
+publish = false
+repository = "https://github.com/im-0/lossy-channel"
+documentation = "https://github.com/im-0/lossy-channel"
+
+[dependencies]
+futures = { version = "*", default_features = false }
