@@ -1,3 +1,6 @@
 #!/bin/sh -eu
 
-exec cargo fmt --all -- --write-mode overwrite
+cargo fmt --all -- --write-mode overwrite
+
+# Ugly hack to not reformat code copied from futures-rs.
+exec git checkout --force -- tests/support
